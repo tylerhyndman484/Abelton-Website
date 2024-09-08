@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
 </head>
 <body>
     <header>
         <nav class="mainNav">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
-            <ul>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC"/>
+            <ul class="topNav">
                 <li>Live</li>
                 <li>Push</li>
                 <li>Note</li>
@@ -17,11 +21,11 @@
                 <li>Shop</li>
                 <li>Packs</li>
                 <li>Help</li>
-                <li>More</li>
+                <li class="more">More</li>
             </ul>
 
-            <ul>
-                <li>Try Live 12 for free</li>
+            <ul class="mainNavTopRight">
+                <li class="tryLive">Try Live 12 for free</li>
                 <li>Log in or register</li>
             </ul>
         </nav>
@@ -48,15 +52,15 @@
         </section>
 
         <section>
-            <img>
-            <img>
+            <img src="/images/abletonPush.jpg" alt="picture of sound editing device the colored pads to push to create music">
+            <img src="/images/womanWalking.jpg" alt="woman waling past tables in a kitchen">
         </section>
 
         <section>
             <h2>Making music isn't easy. It takes time, effort, and learning. But when you're in the flow, it's incredibly rewarding.</h2>
             <p>We feel the same way about making Ableton products. The driving force behind Ableton is our passion for what we make, and the people we make it for.</p>
             <figure>
-                <video></video>
+                <video src="/videos/talkingAboutSoundRecording.mp4"></video>
                 <figcaption>Why Ableton - Juanpe Bolivar</figcaption>
             </figure>
             <h2>We are more than 350 people from 30 different countries divided between our headquarters in Berlin and our offices in Los Angeles and Tokyo.</h2>
@@ -64,9 +68,9 @@
         </section>
 
         <section>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="/images/personWritingOnNotepad.jpg" alt="person standing up at a table writing on a notepad">
+            <img src="/images/soundEditing.jpg" alt="person sitting at a desk with a computer using sound editing software to edit sound">
+            <img src="/images/Studio.jpg" alt="picture of a red pad with the name of a studio on it">
         </section>
 
         <section>
@@ -75,7 +79,7 @@
         </section>
 
         <section>
-            <img src="" alt="">
+            <img src="/images/bigSoundEditing.jpg" alt="picture of a sound editing harware device that shows a sound wavelength on it">
         </section>
 
         <section>
@@ -85,8 +89,8 @@
         </section>
 
         <section>
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="/images/classroom1.jpg" alt="picture of a clasrrom with the kids raising their hands to answer a question">
+            <img src="/images/classroom2.jpg" alt="picture of a classroom and the students are sitting and listening to the teacher">
         </section>
 
         <section>
@@ -95,7 +99,7 @@
         </section>
 
         <section>
-            <img src="" alt="">
+            <img src="/images/classroom3.jpg" alt="picture of a student up at the chalkboard writing an answer to a question">
             <h2>We're really proud of the work we've done so far. But there's so much more to come. If you'd like to be a part of it, please join us.</h2>
             <p>See latest jobs</p>
         </section>
@@ -136,11 +140,11 @@
                 <label for="languageAndLocation">Language and Location</label>
                 <select name="language" id="languageAndLocation">
                     <option value="english" selected>English</option>
-                    <option value="deutsch" selected>Deutsch</option>
-                    <option value="francais" selected>Francais</option>
-                    <option value="Japanese" selected>Japanese</option>
-                    <option value="Chinese" selected>Chinese</option>
-                    <option value="Spanish" selected>Espanol</option>
+                    <option value="deutsch">Deutsch</option>
+                    <option value="francais">Francais</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Spanish">Espanol</option>
                 </select>
 
                 <select name="location" id="languageAndLocation">
