@@ -6,7 +6,7 @@
 --color-accent-600: #ff764d;
 --color-accent-500: #d5b3ff;
 --color-accent-700: #0000ff;
-
+--companyNameColor: #fb6854;
 }
 
 /* CSS RESET */
@@ -34,6 +34,8 @@
 
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    font-weight: normal;
+    font-size: normal;
   }
 
   #root, #__next {
@@ -68,6 +70,24 @@
     .tryLive {
       color: var(--color-accent-700);
       font-size: 1.25rem;
+    }
+
+    .secondaryNav {
+      font-weight: 500;
+      list-style: none;
+    }
+
+    .companyName {
+      font-size: 4rem;
+      color: var(--companyNameColor);
+    }
+
+    .abletonCompanyBackground h2 {
+      font-weight: 500;
+    }
+
+    .abletonCompanyBackground a {
+      text-decoration: none;
     }
 
   /* Visual Styling */
