@@ -35,7 +35,6 @@
   p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     font-weight: normal;
-    font-size: normal;
   }
 
   #root, #__next {
@@ -53,22 +52,11 @@
       font-family: 'Roboto';
     }
 
-    .topNav  {
-      list-style: none;
-      font-weight: 500;
-    }
-
-    .more {
-      color: var(--color-accent-600);
-    }
-
-    .mainNavTopRight {
-      font-weight: 500;
+    .noListStyle {
       list-style: none;
     }
 
     .tryLive {
-      color: var(--color-accent-700);
       font-size: 1.25rem;
     }
 
@@ -90,12 +78,53 @@
       text-decoration: none;
     }
 
+    .boldText {
+      font-weight: 500;
+    }
+
+    .smallFont {
+      font-size: .8rem;
+    }
+
+    .blueText {
+      color: var(--color-accent-700);
+    }
+
+    .orangeText {
+      color: var(--color-accent-600);
+    }
+
+    .bigText {
+      font-size: 1.5rem;
+    }
+
+    .biggerText {
+      font-size: 3.5rem;
+    }
+
   /* Visual Styling */
 
   /* positional styling */
 
     nav img {
       min-width: 4rem;
+    }
+    
+    .flex {
+      display: flex;
+    }
+
+    .mainNav {
+      display: flex;
+      padding-left: 2rem;
+    }
+
+    .mainNavLinks {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      padding-top: 1.25rem;
+      padding-bottom: 1.25rem;
     }
 
   /* positional styling */
