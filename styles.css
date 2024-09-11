@@ -196,11 +196,11 @@
     }
 
     .paddingTextTop {
-      padding-top: 6rem;
+      padding-top: 6.5rem;
     }
 
     .paddingTextBottom {
-      padding-bottom: 3rem;
+      padding-bottom: 4rem;
     }
 
     .abletonCompanyBackground h2 {
@@ -208,7 +208,21 @@
     }
 
     .abletonCompanyBackground {
-      padding-bottom: 8rem;
+      padding-bottom: 6.5rem;
+    }
+
+    .imageSectionOnePicLeft {
+      max-width: 37.5rem;
+      aspect-ratio: 1;
+    }
+
+    .imageSectionOnePicRight {
+      max-width: 30rem;
+      aspect-ratio: 1/.75;
+    }
+
+    .imageSectionOne {
+      display: inline-block;
     }
     
 
