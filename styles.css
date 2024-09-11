@@ -66,7 +66,7 @@
     }
 
     .companyName {
-      font-size: 4rem;
+      font-size: 5.5rem;
       color: var(--companyNameColor);
     }
 
@@ -104,6 +104,18 @@
 
     .mainNavTopRight {
       font-size: .875rem;
+    }
+
+    .abletonCompanyBackground {
+      font-size: 1.1rem;
+    }
+
+    .abletonCompanyBackground h2 {
+      line-height: 2.5rem;
+    }
+
+    .abletonCompanyBackground article {
+      line-height: 2rem;
     }
 
   /* Visual Styling */
@@ -152,6 +164,53 @@
       align-items: center;
     }
 
+    .borderBottom {
+      border-bottom: 2px solid rgb(240, 240, 240);
+      padding-bottom: .35rem;
+    }
+
+    .secondaryNav {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      font-size: .875rem;
+    }
+
+    .companyName {
+      background-image: url(/images/soundEditing.jpg);
+      background-size: cover;
+      background-position-x: 50%;
+      background-position-y: 50%;
+      margin-inline: 7.5rem;
+      min-height: 41rem;
+      display: grid;
+    }
+
+    .centerText {
+      text-align: center;
+      display: grid;
+      place-self: center;
+    }
+
+    .paddingTextColumn {
+      padding-inline: 23rem;
+    }
+
+    .paddingTextTop {
+      padding-top: 6rem;
+    }
+
+    .paddingTextBottom {
+      padding-bottom: 3rem;
+    }
+
+    .abletonCompanyBackground h2 {
+      padding-bottom: 1.5rem;  
+    }
+
+    .abletonCompanyBackground {
+      padding-bottom: 8rem;
+    }
+    
 
   /* positional styling */
 
