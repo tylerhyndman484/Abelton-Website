@@ -123,6 +123,10 @@
       line-height: 2.5rem;
     }
 
+    .paddingTextBlock p {
+      line-height: 2rem;
+    }
+
     .abletonCompanyBackground article {
       line-height: 2rem;
     }
@@ -259,6 +263,18 @@
       aspect-ratio: 1/.75;
     }
     
+    .subText {
+      padding-bottom: 6rem;
+    }
+
+    .videoTestimony {
+      padding-bottom: 6rem;
+    }
+
+    .videoCaption {
+      padding-top: .75rem;
+      padding-left: .75rem;
+    }
 
   /* positional styling */
 
