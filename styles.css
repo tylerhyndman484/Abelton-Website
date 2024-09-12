@@ -110,7 +110,7 @@
       font-size: 1.1rem;
     }
 
-    .abletonCompanyBackground h2 {
+    .paddingTextBlock h2 {
       line-height: 2.5rem;
     }
 
@@ -191,38 +191,63 @@
       place-self: center;
     }
 
-    .paddingTextColumn {
+    .paddingTextBlock {
       padding-inline: 23rem;
-    }
-
-    .paddingTextTop {
       padding-top: 6.5rem;
-    }
-
-    .paddingTextBottom {
-      padding-bottom: 4rem;
-    }
-
-    .abletonCompanyBackground h2 {
-      padding-bottom: 1.5rem;  
-    }
-
-    .abletonCompanyBackground {
       padding-bottom: 6.5rem;
     }
 
-    .imageSectionOnePicLeft {
-      max-width: 37.5rem;
+    .paddingTextBlock h2 {
+      padding-bottom: 1.5rem;  
+    }
+    
+    .imgSec1 {
+      display: flex;
+      width: 100%;
+      padding-top: 8.3125rem;
+      padding-bottom: 8.3125rem;
+      margin-bottom: 8.3125rem;
+      position: relative;
+    }
+
+    .yellowBackground {
+      height: 58.3125vw;
+      width: 58.3125vw;
+      background-color: var(--color-accent-300);
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+
+    .imgSec1-LeftContainer {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      margin-left: 8.3125rem;
+      z-index: 1;
+    }
+
+    .imgSec1-RightContainer {
+      display: flex;
+      width: 50%;
+      min-height: 33rem;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+      margin-left: 2rem;
+      margin-right: 5rem;
+    }
+
+    .imgSec1PicLeft {
+      width: 42vw;
       aspect-ratio: 1;
     }
 
-    .imageSectionOnePicRight {
-      max-width: 30rem;
-      aspect-ratio: 1/.75;
-    }
 
-    .imageSectionOne {
-      display: inline-block;
+    .imgSec1PicRight {
+      width: 33vw;
+      height: 25vw;
+      aspect-ratio: 1/.75;
     }
     
 
