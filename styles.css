@@ -247,7 +247,7 @@
       align-items: center;
       justify-content: center;
       z-index: 1;
-      margin-left: 2rem;
+      margin-left: 3rem;
       margin-right: 5rem;
     }
 
@@ -274,6 +274,27 @@
     .videoCaption {
       padding-top: .75rem;
       padding-left: .75rem;
+    }
+
+    .greenBackground {
+      width: 58.3vw;
+      height: 75vw;
+      position: absolute;
+      left: 0;
+    }
+
+    .imgSec2-LeftContainer {
+      position: relative;
+    }
+
+    .imgSec2-LeftContainer img {
+      width: 33.3vw;
+      height: 25vw;
+    }
+
+    .imgSec2-RightContainer img {
+      width: 41.67vw;
+      height: 41.67vw;
     }
 
   /* positional styling */
