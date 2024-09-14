@@ -283,6 +283,10 @@
       left: 0;
     }
 
+    .imgSec2 {
+      display: flex;
+    }
+
     .imgSec2-LeftContainer {
       position: relative;
     }
