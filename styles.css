@@ -289,11 +289,24 @@
 
     .imgSec2-LeftContainer {
       position: relative;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 7.8125rem;
+    }
+
+    .imgSec2-LeftContainer figure {
+      translate: 15%;
     }
 
     .imgSec2-LeftContainer img {
       width: 33.3vw;
       height: 25vw;
+    }
+
+    .imgSec2-RightContainer {
+      display: inline-block;
+      width: 50%;
     }
 
     .imgSec2-RightContainer img {
