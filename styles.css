@@ -328,6 +328,16 @@
       height: 41.67vw;
     } 
 
+    .bigImgSection img {
+      width: 83vw;
+      height: 47vw;
+    }
+
+    .bigImgSection {
+      display: flex;
+      justify-content: center;
+    }
+
   /* positional styling */
 
 /* Desktop Layout */
