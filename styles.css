@@ -338,6 +338,40 @@
       justify-content: center;
     }
 
+    .imgSection3 {
+      position: relative;
+      width: 58.3vw;
+      height: 75vw;
+    }
+
+    .purpleBackground {
+      position: absolute;
+      width: 58.3vw;
+      height: 75vw;
+      top: 0;
+      margin: auto;
+      background-color: var(--color-accent-500);
+      z-index: -1;
+    }
+
+    .imgSec3-LeftContainer {
+      width: 50%;
+    }
+
+    .imgSect3-RightContainer {
+      width: 50%;
+    }
+
+    .imgSec3-LeftContainer img {
+      width: 33.3vw;
+      height: 25vw;
+    }
+
+    .imgSect3-RightContainer img {
+      width: 41.67vw;
+      height: 41.67vw;
+    }
+
   /* positional styling */
 
 /* Desktop Layout */
