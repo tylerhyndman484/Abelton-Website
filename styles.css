@@ -340,26 +340,33 @@
 
     .imgSection3 {
       position: relative;
-      width: 58.3vw;
-      height: 75vw;
+      height: 62vw;
+      display: flex;
+      width: 100%;
     }
 
     .purpleBackground {
       position: absolute;
-      width: 58.3vw;
-      height: 75vw;
+      width: 67vw;
+      height: 62vw;
       top: 0;
-      margin: auto;
+      translate: 25%;
       background-color: var(--color-accent-500);
       z-index: -1;
     }
 
     .imgSec3-LeftContainer {
       width: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .imgSect3-RightContainer {
       width: 50%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
     }
 
     .imgSec3-LeftContainer img {
