@@ -420,51 +420,60 @@
       padding-left: .5rem;
     }
 
-    .gridFooterLayout {
-      padding: 7rem;
-      gap: 1.5rem;
-      border-top: 2px solid rgb(240, 240, 240);
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas:
-        "ableton . ."
-        "register education newsletter"
-        "community languageAndLocation languageAndLocation";
+    .gridTitle {
+      padding-inline: 6.4rem;
     }
 
-    .ableton {
-      grid-area: ableton;
+    .gridFooterLayout {
+      padding-inline: 6.4rem;
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+      row-gap: 3rem;
+      column-gap: -1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+        "register education newsletter"
+        "community languageAndLocation .";
     }
 
     .register {
       grid-area: register;
+      line-height: 2rem;
+      row-gap: 5rem;
     }
 
     .community {
       grid-area: community;
+      line-height: 2rem;
     }
 
     .education {
       grid-area: education;
+      line-height: 2rem;
     }
 
     .languageAndLocation {
       grid-area: languageAndLocation;
+      text-wrap: nowrap;
     }
 
     .newsletter {
       grid-area: newsletter;
+      line-height: 2rem;
     }
 
     .socialIcons {
       display: flex;
+      padding-top: .5rem;
+      gap: .25rem;
     }
 
     .contactListAndLogo {
       display: flex;
       width: 100%;
-      padding-inline: 7rem;
+      padding-inline: 6.4rem;
       text-wrap: nowrap;
       margin-bottom: 7rem;
     }
@@ -483,6 +492,27 @@
 
     .newsletter p {
       padding-bottom: 1.5rem;
+    }
+
+    .email {
+      width: 100%;
+      display: flex;
+    }
+
+    .email input {
+      width: 75%;
+    }
+
+    .email button {
+      width: 25%;
+    }
+
+    .language {
+      width: 40%;
+    }
+
+    .location {
+      width: 55%;
     }
 
   /* positional styling */
