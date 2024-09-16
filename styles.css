@@ -420,8 +420,69 @@
       padding-left: .5rem;
     }
 
-    footer {
-      padding: 5rem;
+    .gridFooterLayout {
+      padding: 7rem;
+      gap: 1.5rem;
+      border-top: 2px solid rgb(240, 240, 240);
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+        "ableton . ."
+        "register education newsletter"
+        "community languageAndLocation languageAndLocation";
+    }
+
+    .ableton {
+      grid-area: ableton;
+    }
+
+    .register {
+      grid-area: register;
+    }
+
+    .community {
+      grid-area: community;
+    }
+
+    .education {
+      grid-area: education;
+    }
+
+    .languageAndLocation {
+      grid-area: languageAndLocation;
+    }
+
+    .newsletter {
+      grid-area: newsletter;
+    }
+
+    .socialIcons {
+      display: flex;
+    }
+
+    .contactListAndLogo {
+      display: flex;
+      width: 100%;
+      padding-inline: 7rem;
+      text-wrap: nowrap;
+      margin-bottom: 7rem;
+    }
+
+    .contactFooter {
+      display: flex;
+      gap: 1rem;
+      padding-left: 0;
+    }
+
+    .footerLogo {
+      display: flex;
+      justify-content: end;
+      width: 100%;
+    }
+
+    .newsletter p {
+      padding-bottom: 1.5rem;
     }
 
   /* positional styling */
