@@ -421,18 +421,18 @@
     }
 
     .gridTitle {
-      padding-inline: 6.4rem;
+      padding-inline: 7rem;
     }
 
     .gridFooterLayout {
-      padding-inline: 6.4rem;
+      padding-inline: 7rem;
       padding-top: 3.5rem;
       padding-bottom: 3.5rem;
       row-gap: 3rem;
       column-gap: -1rem;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 30% 31% 1fr;
+      grid-template-rows: 1fr 1fr; 
       grid-template-areas:
         "register education newsletter"
         "community languageAndLocation .";
@@ -473,7 +473,7 @@
     .contactListAndLogo {
       display: flex;
       width: 100%;
-      padding-inline: 6.4rem;
+      padding-inline: 7rem;
       text-wrap: nowrap;
       margin-bottom: 7rem;
     }
@@ -488,6 +488,8 @@
       display: flex;
       justify-content: end;
       width: 100%;
+      align-items: center;
+      gap: .5rem;
     }
 
     .newsletter p {
@@ -508,11 +510,20 @@
     }
 
     .language {
-      width: 40%;
+      width: 30%;
     }
 
     .location {
       width: 55%;
+    }
+
+    .languageAndLocation {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .languageAndLocation label {
+      padding-bottom: 1rem;
     }
 
   /* positional styling */
