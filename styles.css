@@ -131,6 +131,33 @@
       line-height: 2rem;
     }
 
+    .language {
+      border: transparent;
+      background-color: rgb(233, 230, 230);
+      padding: .25rem;
+      padding-right: 1rem;
+    }
+
+    .location {
+      border: transparent;
+      background-color: rgb(233, 230, 230);
+      padding: .25rem;
+    }
+
+    .email input {
+      border: transparent;
+      background-color: rgb(233, 230, 230);
+      padding: .25rem .25rem .25rem 1rem;
+    }
+
+    .email button {
+      border-radius: 0;
+      border: transparent;
+      background-color: var(--color-accent-700);
+      color: white;
+    }
+
+
   /* Visual Styling */
 
   /* positional styling */
