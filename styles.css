@@ -553,6 +553,20 @@
       padding-bottom: 1rem;
     }
 
+    .gridFooterLayout p {
+      position: relative;
+    }
+
+    .gridFooterLayout p::after {
+      content: url(/svg/bx-chevron-right.svg);
+      position: absolute;
+      top: 4px;
+    }
+
+    .newsletter p::after {
+      content: "";
+    }
+
   /* positional styling */
 
 /* Desktop Layout */
