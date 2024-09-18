@@ -51,7 +51,7 @@
     body {
       font-family: 'Roboto';
       max-width: 100rem;
-      background-color: gray;
+      background-color: rgb(240, 240, 240);
       margin-inline: 3rem;
     }
 
@@ -322,6 +322,7 @@
       position: absolute;
       right: 0px;
       top: 0px;
+      z-index: 1;
     }
 
     .imgSec1-LeftContainer {
@@ -372,6 +373,7 @@
      display: flex;
      position: relative;
      margin-right: 9rem;
+     z-index: 2;
    }
 
     .greenBackground {
@@ -381,7 +383,7 @@
       left: 0;
       top: 0;
       background-color: var(--color-accent-200);
-      z-index: -1;
+      z-index: 1;
     }
 
 
@@ -392,6 +394,7 @@
       flex-direction: column;
       gap: 7.8125rem;
       padding-top: 8rem;
+      z-index: 2;
     }
 
     .imgSec2-LeftContainer figure {
@@ -435,6 +438,7 @@
       height: 62vw;
       display: flex;
       width: 100%;
+      z-index: 3;
     }
 
     .purpleBackground {
@@ -444,7 +448,7 @@
       top: 0;
       translate: 25%;
       background-color: var(--color-accent-500);
-      z-index: -1;
+      z-index: 0;
     }
 
     .imgSec3-LeftContainer {
@@ -464,11 +468,13 @@
     .imgSec3-LeftContainer img {
       width: 33.3vw;
       height: 25vw;
+      z-index: 3;
     }
 
     .imgSect3-RightContainer img {
       width: 41.67vw;
       height: 41.67vw;
+      z-index: 3;
     }
 
     .jobLinkBox {
@@ -569,7 +575,7 @@
       width: 100%;
       padding-inline: 7rem;
       text-wrap: nowrap;
-      margin-bottom: 7rem;
+      padding-bottom: 7rem;
     }
 
     .contactFooter {
