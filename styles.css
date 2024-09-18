@@ -72,6 +72,10 @@
     .secondaryNav {
       font-weight: 500;
       list-style: none;
+      position: sticky;
+      top: 0px;
+      background-color: rgba(255, 255, 255, .9);
+      z-index: 100;
     }
 
     .companyName {
@@ -449,6 +453,8 @@
 
     .gridTitle {
       padding-inline: 7rem;
+      border-top: 2px solid rgb(233, 230, 230);
+      padding-top: 6.5rem;
     }
 
     .gridFooterLayout {
@@ -458,7 +464,7 @@
       row-gap: 3rem;
       column-gap: -1rem;
       display: grid;
-      grid-template-columns: 30% 31% 1fr;
+      grid-template-columns: 28% 30% 1fr;
       grid-template-rows: 1fr 1fr; 
       grid-template-areas:
         "register education newsletter"
