@@ -50,6 +50,13 @@
 
     body {
       font-family: 'Roboto';
+      max-width: 100rem;
+      background-color: gray;
+      margin-inline: 3rem;
+    }
+
+    .bodyContainer {
+      background-color: white;
     }
 
     .mainNav {
@@ -167,7 +174,30 @@
   /* positional styling */
 
     nav img {
-      min-width: 4rem;
+      width: max(4vw ,3.6rem);
+      height: max(4vw ,3.6rem);
+    }
+
+    @media screen and (max-width: 64rem) {
+      .borderBottom {
+        position: absolute;
+        left: -1000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    }
+
+    @media screen and (min-width: 64.0625rem) {
+      .mobileNav {
+        position: absolute;
+        left: -1000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
     }
 
     nav {
@@ -181,6 +211,13 @@
     .mainNav {
       display: flex;
       padding-left: 2rem;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 80rem) {
+      .mainNav {
+        padding-left: .5rem;
+      }
     }
 
      .mainNavLinks {
@@ -191,12 +228,36 @@
       padding-bottom: 1rem;
     }
 
+    @media screen and (max-width: 80rem) {
+      .mainNavLinks {
+        font-size: .875rem;
+      }
+    }
+
     .mainNavTopRight {
       display: flex;
       align-items: center;
       justify-content: end;
       width: 100%;
       padding-right: 2.5rem;
+    }
+
+    @media screen and (max-width: 80rem) {
+      .mainNavTopRight {
+        padding-right: 1.5rem;
+      }
+    }
+
+    .mainNavTopRightLinks {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 80rem) {
+      .mainNavTopRightLinks li {
+        font-size: .875rem;
+      }
     }
 
     .gap {
