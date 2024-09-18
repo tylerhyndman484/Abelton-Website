@@ -52,7 +52,12 @@
       font-family: 'Roboto';
       max-width: 100rem;
       background-color: rgb(240, 240, 240);
-      margin-inline: 3rem;
+    }
+
+    @media screen and (min-width: 100rem) {
+      body {
+        margin-inline: 3rem;
+      }
     }
 
     .bodyContainer {
