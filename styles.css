@@ -60,6 +60,31 @@
       }
     }
 
+    .mobileNav {
+      padding: .4rem 0rem .4rem .5rem;
+      border-bottom: 2px solid rgb(233, 230, 230);
+    }
+
+    .menuButton {
+      border: transparent;
+      background-color: white;
+      margin-left: 1.2rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+
+    .menuLink {
+      text-decoration: none;
+      color: black;
+      position: relative;
+    }
+
+    .menuLink::after {
+      content: url(svg/bxs-down-arrow.svg);
+      position: absolute;
+      right: -15px;
+    }
+
     .bodyContainer {
       background-color: white;
     }
@@ -203,7 +228,7 @@
         height: 1px;
         overflow: hidden;
       }
-    }
+    } 
 
     nav {
       display: flex;
@@ -285,13 +310,27 @@
       font-size: .875rem;
     }
 
+    @media screen and (max-width: 80rem) {
+      .secondaryNav {
+        padding-left: 1.1rem;
+      }
+    }
+
+    @media screen and (max-width: 80rem) {
+      .secondaryNavList {
+        font-size: .75rem;
+        padding: 0;
+        gap: 1.1rem;
+      }
+    }
+
     .companyName {
       background-image: url(/images/soundEditing.jpg);
       background-size: cover;
       background-position-x: 50%;
       background-position-y: 50%;
-      margin-inline: 7.5rem;
-      min-height: 41rem;
+      margin-inline: 8%;
+      height: 90vh;
       display: grid;
     }
 
@@ -301,10 +340,19 @@
       place-self: center;
     }
 
+    @media screen and (max-width: 48rem) {
+      .heroTitle {
+        font-size: 3.5rem;
+      }
+    }
+
     .paddingTextBlock {
-      padding-inline: 23rem;
+      margin-inline: auto;
       padding-top: 6.5rem;
       padding-bottom: 6.5rem;
+      padding-inline: 3rem;
+      max-width: 60rem;
+      min-width: 15rem;
     }
 
     .paddingTextBlock h2 {
