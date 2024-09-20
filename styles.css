@@ -452,13 +452,12 @@
     .imgSec2 {
      display: flex;
      position: relative;
-     margin-right: 9rem;
      z-index: 2;
    }
 
     .greenBackground {
       width: 58.3vw;
-      height: 58.3vw;
+      height: 75vw;
       position: absolute;
       left: 0;
       top: 0;
@@ -472,8 +471,8 @@
       height: 75vw;
       display: flex;
       flex-direction: column;
-      gap: 7.8125rem;
-      padding-top: 8rem;
+      gap: 8.33vw;
+      padding-top: 8.33vw;
       z-index: 2;
     }
 
@@ -485,6 +484,7 @@
     .imgSec2-RightContainer figure {
       display: flex;
       align-items: center;
+      justify-content: start;
     }
 
     .imgSec2-LeftContainer img {
@@ -494,11 +494,15 @@
 
     .imgSec2-RightContainer {
       width: 50%;
+      display: flex;
+      align-items: center;
+      margin-right: 8.33vw;
     }
 
     .imgSec2-RightContainer img {
       width: 41.67vw;
       height: 41.67vw;
+      z-index: 3;
     } 
 
     .bigImgSection img {
