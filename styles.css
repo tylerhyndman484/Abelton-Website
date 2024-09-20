@@ -116,6 +116,12 @@
       z-index: 100;
     }
 
+    @media screen and (max-width: 48rem) {
+      .secondaryNav {
+        position: static;
+      }
+    }
+
     .companyName {
       font-size: 5.5rem;
       color: var(--companyNameColor);
@@ -169,6 +175,16 @@
       line-height: 2rem;
     }
 
+    @media screen and (max-width: 70.1875rem) {
+      .paddingTextBlock h2 {
+        line-height: 2rem;
+      }
+      
+      .paddingTextBlock p {
+        line-height: 1.5rem;
+      }
+    }
+
     .abletonCompanyBackground article {
       line-height: 2rem;
     }
@@ -197,6 +213,16 @@
       border: transparent;
       background-color: var(--color-accent-700);
       color: white;
+    }
+
+    @media screen and (max-width: 70.1875rem) {
+      .mobileTextFontSize {
+        font-size: 1.125rem; /* 18px */
+      }
+
+      .mobileSubTextFontSize {
+        font-size: .875rem; /* 14px */
+      }
     }
 
 
@@ -349,15 +375,15 @@
 
     .paddingTextBlock {
       margin-inline: auto;
-      padding-top: 6.5rem;
-      padding-bottom: 6.5rem;
-      padding-inline: 3rem;
+      padding-top: 8.33vw;
+      padding-bottom: 8.33vw;
+      padding-inline: 8.33vw;
       max-width: 60rem;
       min-width: 15rem;
     }
 
     .paddingTextBlock h2 {
-      padding-bottom: 1.5rem;  
+      padding-bottom: 3.5vw;  
     }
     
     .imgSec1 {
@@ -366,7 +392,6 @@
       height: 58.3125vw;
       padding-top: 8.33vw;
       padding-bottom: 8.33vw;
-      margin-bottom: 8.33vw;
       position: relative;
       align-items: center;
     }
@@ -400,6 +425,7 @@
 
     .imgSec1PicLeft {
       width: 42vw;
+      margin-left: 8.33vw;
       aspect-ratio: 1;
     }
 
@@ -411,11 +437,11 @@
     }
     
     .subText {
-      padding-bottom: 6rem;
+      padding-bottom: 8.33vw;
     }
 
     .videoTestimony {
-      padding-bottom: 6rem;
+      padding-bottom: 8.33vw;
     }
 
     .videoCaption {
@@ -626,14 +652,21 @@
       display: flex;
       width: 100%;
       padding-inline: 7rem;
-      text-wrap: nowrap;
+      /* text-wrap: nowrap; */
       padding-bottom: 7rem;
     }
 
+    
     .contactFooter {
       display: flex;
       gap: 1rem;
       padding-left: 0;
+    }
+    
+    @media screen and (max-width: 80rem) {
+      .contactFooter {
+        display: block;
+      }
     }
 
     .footerLogo {
