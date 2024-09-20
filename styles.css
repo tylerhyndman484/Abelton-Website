@@ -435,13 +435,10 @@
       height: 25vw;
       aspect-ratio: 1/.75;
     }
-    
-    .subText {
-      padding-bottom: 8.33vw;
-    }
-
+  
     .videoTestimony {
       padding-bottom: 8.33vw;
+      padding-top: 8.33vw;
     }
 
     .videoCaption {
@@ -521,6 +518,10 @@
       display: flex;
       width: 100%;
       z-index: 3;
+    }
+
+    .paragraphElementPadding {
+      padding-bottom: 3.5vw;
     }
 
     .purpleBackground {
