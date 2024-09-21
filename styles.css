@@ -561,49 +561,57 @@
     }
 
     .jobLinkBox {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-inline: 8.33vw;
+      display: flex;
+      padding-inline: 8.33vw;
       height: 42vw;
-      place-items: center;
-      margin-bottom: 6.5vw;
+      padding-bottom: 8.33vw;
     }
 
-    @media screen and (max-width: 80rem) {
-      .jobLinkBox {
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: none;
-      }
+    .leftBoxWithJobLink {
+      width: 50%;
     }
 
-    .jobLinkBox figure {
-      aspect-ratio: 1/1;
+    .leftBoxWithJobLink figure {
+      height: 100%;
     }
 
-    .jobLinkBox img {
-      width: 100%;
+    .leftBoxWithJobLink img {
       height: 100%;
     }
 
     .rightBoxWithJobLink {
       background-color: var(--color-accent-400);
-      aspect-ratio: 1/1;
+      height: 100%;
+      width: 50%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      flex-direction: column;
+      line-height: 1.75rem;
     }
 
     .rightBoxWithJobLink h2 {
-      padding-bottom: 1.5vw;
+      padding-bottom: 3vw;
+      padding-top: 3vw;
+      line-height: 2.5rem;
     }
 
     .rightBoxWithJobLink h2, .rightBoxWithJobLink p {
-      padding-inline: 5vw;
+      padding-inline: 8.33vw;
+    }
+
+    .rightBoxWithJobLink p {
+      padding-bottom: 8.33vw;
     }
 
     .rightBoxWithJobLink p::after {
       content: '>';
       padding-left: .5rem;
+    }
+
+    @media screen and (max-width: 70.1875rem) {
+      .jobLinkText, .jobLink{
+        font-size: 1rem;
+      }
     }
 
     .gridTitle {
