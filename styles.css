@@ -772,6 +772,76 @@
       content: "";
     }
 
+    /* footer layout changes to stacked on top of each other */
+
+    @media screen and (max-width: 64rem) {
+      .gridFooterLayout {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+          "newsletter"
+          "register"
+          "education"
+          "community"
+          "languageAndLocation";
+        
+        column-gap: 0rem;
+        row-gap: 2rem;
+        padding: 6vw 8.33vw 8.33vw 8.33vw;
+        font-size: .875rem;
+      }
+
+      .gridFooterLayout h3 {
+        font-size: .875rem;
+      }
+
+      .gridFooterLayout div {
+        line-height: 1.5rem;
+      }
+
+      .gridTitle {
+        padding-left: 8.33vw;
+        padding-top: 6vw;
+      }
+
+      .ableton {
+        font-size: 2.2rem;
+      }
+
+      .register {
+        height: fit-content;
+      }
+
+      .languageAndLocation select {
+        display: block;
+      }      
+
+      .location {
+        width: 65%;
+      }
+
+      .contactListAndLogo {
+        padding-left: 8.33vw;
+        padding-bottom: 6vw;
+        line-height: 1.75rem;
+        display: block;
+      }
+
+      .footerLogo {
+        justify-content: start;
+        flex-direction: row-reverse;
+        padding-top: 2.25rem;
+        padding-left: .2rem;
+      }
+
+      .footerLogo svg {
+        transform: scale(1.75);
+      }
+
+      .footerLogo p {
+        padding-left: .5rem;
+      }
+    }
+
   /* positional styling */
 
 /* Desktop Layout */
