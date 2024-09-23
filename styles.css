@@ -588,7 +588,7 @@
       flex-direction: column;
       line-height: 1.75rem;
     }
-
+    
     .rightBoxWithJobLink h2 {
       padding-bottom: 3vw;
       padding-top: 3vw;
@@ -606,6 +606,10 @@
     .rightBoxWithJobLink p::after {
       content: '>';
       padding-left: .5rem;
+    }
+
+    .jobLinkText {
+      font-size:
     }
 
     @media screen and (max-width: 70.1875rem) {
