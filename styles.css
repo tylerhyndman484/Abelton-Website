@@ -639,7 +639,7 @@
 
     @media screen and (max-width: 70.1875rem) {
       .jobLinkText, .jobLink{
-        font-size: 1rem;
+        font-size: 1.1rem;
       }
     }
 
@@ -766,6 +766,7 @@
       content: url(/svg/bx-chevron-right.svg);
       position: absolute;
       top: 4px;
+      font-weight: 100;
     }
 
     .newsletter p::after {
@@ -798,9 +799,18 @@
         line-height: 1.5rem;
       }
 
+      .gridFooterLayout p::after {
+        top: -1px;
+        transform:scale(.65);
+      }
+
       .gridTitle {
         padding-left: 8.33vw;
         padding-top: 6vw;
+      }
+
+      .newsletter p {
+        padding-bottom: 1rem;
       }
 
       .ableton {
@@ -809,6 +819,10 @@
 
       .register {
         height: fit-content;
+      }
+
+      .languageAndLocation label {
+        padding-bottom: .5rem;
       }
 
       .languageAndLocation select {
