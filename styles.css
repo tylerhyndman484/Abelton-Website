@@ -382,8 +382,14 @@
       min-width: 15rem;
     }
 
+    @media screen and (min-width: 48rem) {
+      .paddingTextBlock {
+        padding-inline: 8rem;
+      }
+    }
+
     .paddingTextBlock h2 {
-      padding-bottom: 3.5vw;  
+      padding-bottom: 1rem;  
     }
     
     .imgSec1 {
