@@ -65,6 +65,11 @@
       padding: .4rem 0rem .4rem .5rem;
       border-bottom: 2px solid rgb(233, 230, 230);
       background-color: var(--color-accent-700);
+      display: block;
+    }
+
+    .mobileLogoAndMenuBar {
+      display: flex;
     }
 
     .mobileNav img {
@@ -95,9 +100,30 @@
     }
 
     .mobileMenuList {
-      position: absolute;
+      position: relative;
       background-color: var(--color-accent-700);
+      color: white;
+      width: 100%;
+      padding-left: .5rem;
     }
+
+    .mobileMenuList ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .mobileListSection1 li {
+      padding-bottom: 1.5rem;
+    }
+
+    .mobileListSection1 li:first-child {
+      padding-top: .75rem;
+    }
+
+    .mobileListSection1 li:last-child {
+      font-size: .8rem;
+    }
+
 
     /* Mobile Navigation Menu that drops down */
 
