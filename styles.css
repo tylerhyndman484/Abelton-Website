@@ -163,12 +163,7 @@
     .scrollOffScreenSection div h3 {
       font-weight: 500;
     }
-
-    .scrollOffScreenList {
-      display: flex;
-      overflow: hidden;
-      min-width: 50rem;
-    }
+    
 
 
     /* Mobile Navigation Menu that drops down */
