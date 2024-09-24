@@ -60,14 +60,21 @@
       }
     }
 
+    /* Mobile Navigation Menu that drops down when clicked */
     .mobileNav {
       padding: .4rem 0rem .4rem .5rem;
       border-bottom: 2px solid rgb(233, 230, 230);
+      background-color: var(--color-accent-700);
+    }
+
+    .mobileNav img {
+      filter: invert();
+      position: relative;
     }
 
     .menuButton {
       border: transparent;
-      background-color: white;
+      background-color: var(--color-accent-700);
       margin-left: 1.2rem;
       font-size: 1.1rem;
       font-weight: 400;
@@ -75,16 +82,24 @@
 
     .menuLink {
       text-decoration: none;
-      color: black;
+      color: white;
       position: relative;
       font-weight: 700;
     }
 
     .menuLink::after {
-      content: url(svg/bxs-down-arrow.svg);
+      content: url(svg/bxs-up-arrow.svg);
       position: absolute;
-      right: -15px;
+      right: -24px;
+      transform: scale(.35);
     }
+
+    .mobileMenuList {
+      position: absolute;
+      background-color: var(--color-accent-700);
+    }
+
+    /* Mobile Navigation Menu that drops down */
 
     .bodyContainer {
       background-color: white;
@@ -713,7 +728,6 @@
       display: flex;
       width: 100%;
       padding-inline: 7rem;
-      /* text-wrap: nowrap; */
       padding-bottom: 7rem;
     }
 
@@ -798,7 +812,7 @@
         
         column-gap: 0rem;
         row-gap: 2rem;
-        padding: 6vw 8.33vw 8.33vw 8.33vw;
+        padding: 2rem 8.33vw 8.33vw 8.33vw;
         font-size: .875rem;
       }
 
@@ -817,7 +831,7 @@
 
       .gridTitle {
         padding-left: 8.33vw;
-        padding-top: 6vw;
+        padding-top: 3.5vw;
       }
 
       .newsletter p {
