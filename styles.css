@@ -527,7 +527,7 @@
     }
 
     .paragraphElementPadding {
-      padding-bottom: 3.5vw;
+      padding-bottom: 1rem;
     }
 
     .purpleBackground {
@@ -571,11 +571,13 @@
       padding-inline: 8.33vw;
       margin-bottom: 8.33vw;
       width: fit-content;
+      height: 42vw;
     }
 
     @media screen and (max-width: 80rem) {
       .jobLinkBox {
         flex-direction: column;
+        height: fit-content;
       }
     }
 
@@ -603,7 +605,7 @@
       background-color: var(--color-accent-400);
       display: flex;
       width:fit-content;
-      height: fit-content;
+      height: 100%;
       justify-content: center;
       flex-direction: column;
     }
@@ -615,7 +617,7 @@
     }
     
     .rightBoxWithJobLink h2 {
-      padding-bottom: 1rem;
+      padding-bottom: 2rem;
       padding-top: 8.33vw;
       line-height: 2.5rem;
     }
@@ -632,6 +634,12 @@
 
     .rightBoxWithJobLink p {
       padding-bottom: 8.33vw;
+    }
+
+    @media screen and (min-width: 70rem) {
+      .rightBoxWithJobLink h2, .rightBoxWithJobLink p {
+        padding-inline: 7rem;
+      }
     }
 
     .rightBoxWithJobLink p::after {
@@ -709,23 +717,20 @@
       padding-bottom: 7rem;
     }
 
+    .contactList {
+      width: 90%;
+    }
     
     .contactFooter {
       display: flex;
       gap: 1rem;
       padding-left: 0;
     }
-    
-    @media screen and (max-width: 80rem) {
-      .contactFooter {
-        display: block;
-      }
-    }
 
     .footerLogo {
       display: flex;
       justify-content: end;
-      width: 100%;
+      width: 50%;
       align-items: center;
       gap: .5rem;
     }
@@ -846,11 +851,17 @@
         display: block;
       }
 
+      .contactFooter {
+        display: block;
+        gap: .5rem;
+      }
+
       .footerLogo {
         justify-content: start;
         flex-direction: row-reverse;
         padding-top: 2.25rem;
         padding-left: .2rem;
+        width: 100%;
       }
 
       .footerLogo svg {
