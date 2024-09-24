@@ -110,10 +110,16 @@
     .mobileMenuList ul {
       list-style: none;
       padding-left: 0;
+      font-weight: 500;
+    }
+
+    .mobileListSection1 {
+      margin-bottom: .5rem;
     }
 
     .mobileListSection1 li {
       padding-bottom: 1.5rem;
+      font-size: 1.1rem;
     }
 
     .mobileListSection1 li:first-child {
@@ -122,6 +128,46 @@
 
     .mobileListSection1 li:last-child {
       font-size: .8rem;
+    }
+
+    .mobileListSection2 li:not(:last-child) {
+      padding-bottom: 1rem;
+    }
+
+    .mobileListSection2 li:last-child {
+      margin-bottom: 2rem;
+    }
+
+    .mobileListSection2 li:first-child {
+      font-size: 1.1rem;
+    }
+
+    .mobileListSection2 li:not(:first-child) {
+      font-size: .8rem;
+    }
+
+    .scrollOffScreenSection {
+      margin-bottom: 1rem;
+    }
+
+    .scrollOffScreenListTitle {
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding-bottom: 1rem;
+    }
+
+    .scrollOffScreenSection div {
+      font-size: .8rem;
+    }
+
+    .scrollOffScreenSection div h3 {
+      font-weight: 500;
+    }
+
+    .scrollOffScreenList {
+      display: flex;
+      overflow: hidden;
+      min-width: 50rem;
     }
 
 
