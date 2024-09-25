@@ -62,7 +62,7 @@
 
     /* Mobile Navigation Menu that drops down when clicked */
     .mobileNav {
-      padding: .4rem 0rem .4rem .5rem;
+      padding: .4rem 0rem 0rem .5rem;
       border-bottom: 2px solid rgb(233, 230, 230);
       background-color: var(--color-accent-700);
       display: block;
@@ -146,22 +146,49 @@
       font-size: .8rem;
     }
 
-    .scrollOffScreenSection {
-      margin-bottom: 1rem;
+    .mobileListSection2 li:nth-child(6) {
+      color: var(--color-accent-600);
     }
+
 
     .scrollOffScreenListTitle {
       font-size: 1.1rem;
       font-weight: 500;
       padding-bottom: 1rem;
+      position: relative;
+    }
+
+    .mobileMenuList::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(90deg, rgb(0, 0, 255, 0), blue);
+      width: 2.5rem;
+      height: 8rem;
     }
 
     .scrollOffScreenSection div {
-      font-size: .8rem;
+      font-size: .75rem;
+      line-height: 1.25rem;
+      column-gap: 1.25rem;
+      padding-bottom: 1rem;
+    }
+
+    .scrollOffScreenSection div:last-child {
+      margin-right: .25rem;
     }
 
     .scrollOffScreenSection div h3 {
       font-weight: 500;
+      font-size: .75rem;
+    }
+
+    .scrollOffScreenList {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 53%;
+      overflow-x: scroll;
     }
     
 
