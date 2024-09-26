@@ -64,47 +64,49 @@
     .mobileNav {
       padding: .4rem 0rem 0rem .5rem;
       border-bottom: 2px solid rgb(233, 230, 230);
-      background-color: var(--color-accent-700);
       display: block;
     }
 
     .mobileLogoAndMenuBar {
       display: flex;
+      position: relative;
     }
 
     .mobileNav img {
-      filter: invert();
       position: relative;
     }
 
     .menuButton {
       border: transparent;
-      background-color: var(--color-accent-700);
       margin-left: 1.2rem;
       font-size: 1.1rem;
       font-weight: 400;
+      background-color: white;
     }
 
     .menuLink {
       text-decoration: none;
-      color: white;
+      color: black;
       position: relative;
       font-weight: 700;
     }
 
-    .menuLink::after {
-      content: url(svg/bxs-up-arrow.svg);
+    .menuButton::after {
+      content: url(svg/bxs-down-arrow.svg);
+      color: black;
       position: absolute;
-      right: -24px;
-      transform: scale(.35);
+      right: -20px;
+      transform: scale(1.2);
     }
 
     .mobileMenuList {
-      position: relative;
+      position: absolute;
       background-color: var(--color-accent-700);
       color: white;
       width: 100%;
-      padding-left: .5rem;
+      padding-left: .75rem;
+      left: 0;
+      top: -1000px;
     }
 
     .mobileMenuList ul {
@@ -355,7 +357,7 @@
       }
     }
 
-    @media screen and (min-width: 64.0625rem) {
+    @media screen and (min-width: 64rem) {
       .mobileNav {
         position: absolute;
         left: -1000px;
