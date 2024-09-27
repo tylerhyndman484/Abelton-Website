@@ -2,12 +2,26 @@
 // Change the color of the menu botton, menu button::after, and mobileNav Img to white when clicked
 // Color change of the above need to transition and not immediately change
 
-const menuButton = document.getElementById("menuButton");
-const mobileMenuList = document.getElementsByClassName("mobileMenuList");
+let btn = document.getElementById("menuButton");
+let mobileLogo = document.getElementById("logo");
 
-function dropdownMobileNav() {
-    const mobileMenuList = document.getElementsByClassName("mobileMenuList");
-    mobileMenuList.style.top = 0;
-}
+let counter = 0;
 
-// menuButton.addEventListener('onclick',);
+
+btn.addEventListener('click', () => {
+    if (btn.style.color === 'black') {
+        btn.style.color = 'white';
+        mobileLogo.style.filter = 'invert()';
+    } else {
+        btn.style.color = 'black';
+        mobileLogo.style.filter = 'none';
+    }   
+    }) 
+
+
+
+
+
+
+
+
