@@ -4,20 +4,23 @@
 
 let btn = document.getElementById("menuButton");
 let mobileLogo = document.getElementById("logo");
+let mobileArrow = document.getElementById("downArrow");
+let mobileMenuList = document.getElementById("mobileMenuList");
 
-let counter = 0;
-
-
-btn.addEventListener('click', () => {
-    if (btn.style.color === 'black') {
-        btn.style.color = 'white';
-        mobileLogo.style.filter = 'invert()';
+function mobileNavColorChange() {
+    if (btn.className === 'menuButton') {
+        btn.className = 'jsMenuButton';
+        mobileLogo.className = 'jsMobileNavLogo';
+        mobileArrow.className = 'jsDownArrow';
     } else {
-        btn.style.color = 'black';
-        mobileLogo.style.filter = 'none';
-    }   
-    }) 
+        btn.className = 'menuButton';
+        mobileLogo.className = 'mobileNavLogo';
+        mobileArrow.className = 'downArrow';
+    }    
+}
 
+
+btn.addEventListener('click', mobileNavColorChange); 
 
 
 

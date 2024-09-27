@@ -72,9 +72,14 @@
       position: relative;
     }
 
-    .mobileNav img {
+    .mobileNavLogo {
       position: relative;
       filter: none;
+    }
+
+    .jsMobileNavLogo {
+      position: relative;
+      filter: invert();
     }
 
     .menuButton {
@@ -82,9 +87,32 @@
       margin-left: 1.2rem;
       font-size: 1.1rem;
       font-weight: 400;
-      background-color: white;
       color: black;
       position: relative;
+      z-index: 2;
+    }
+
+    .jsMenuButton {
+      border: transparent;
+      margin-left: 1.2rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: white;
+      position: relative;
+      z-index: 2;
+    }
+
+    #downArrow {
+      width: .55rem;
+      transform: translate(50%);
+    }
+
+    .downArrow {
+      filter: none;
+    }
+
+    .jsDownArrow {
+      filter: invert();
     }
 
     .menuLink {
@@ -94,11 +122,6 @@
       font-weight: 700;
     }
 
-    .menuButton::after {
-      content: url(svg/bxs-down-arrow.svg);
-      position: absolute;
-      right: -10px;
-    }
 
     .mobileMenuList {
       position: absolute;
