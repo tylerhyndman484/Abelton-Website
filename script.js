@@ -19,8 +19,22 @@ function mobileNavColorChange() {
     }    
 }
 
+const id = null;
+
+function mobileNavDropdown() {
+    const mobileNavMenu = document.getElementById("mobileMenuList");
+    let position = 0;
+
+    clearInterval(id);
+    id = setInterval(frame, 10);
+
+    function frame() {
+        if (position > 0) {
+        }
+    }
 
 btn.addEventListener('click', mobileNavColorChange); 
+btn.addEventListener('click', mobileNavDropdown)
 
 
 
