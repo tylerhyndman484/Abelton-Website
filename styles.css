@@ -89,6 +89,7 @@
       font-weight: 400;
       color: black;
       position: relative;
+      background-color: white;
       z-index: 2;
     }
 
