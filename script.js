@@ -19,7 +19,7 @@ function mobileNavColorChange() {
     }    
 }
 
-const id = null;
+var id = null;
 
 function mobileNavDropdown() {
     const mobileNavMenu = document.getElementById("mobileMenuList");
@@ -29,9 +29,14 @@ function mobileNavDropdown() {
     id = setInterval(frame, 10);
 
     function frame() {
-        if (position > 0) {
+        if (position < 0) {
+            clearInterval(id)
+        } else {
+            position++
+            mobileNavMenu.style.top = position + 'px';
         }
     }
+}
 
 btn.addEventListener('click', mobileNavColorChange); 
 btn.addEventListener('click', mobileNavDropdown)
