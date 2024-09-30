@@ -80,6 +80,7 @@
     .jsMobileNavLogo {
       position: relative;
       filter: invert();
+      z-index: 3;
     }
 
     .menuButton {
@@ -124,15 +125,23 @@
       font-weight: 700;
     }
 
-
     .mobileMenuList {
       position: absolute;
       background-color: var(--color-accent-700);
       color: white;
       width: 100%;
       padding-left: .75rem;
+      padding-top: 4rem;
       left: 0;
       top: -1000px;
+    }
+
+    .jsMobileMenuList {
+      
+    }
+
+    @keyframes  {
+      
     }
 
     .mobileMenuList ul {

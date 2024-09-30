@@ -19,29 +19,29 @@ function mobileNavColorChange() {
     }    
 }
 
-var id = null;
 
 function mobileNavDropdown() {
     const mobileNavMenu = document.getElementById("mobileMenuList");
-    let position = 0;
+    let position = -1000;
 
-    clearInterval(id);
-    id = setInterval(frame, 10);
-
-    function frame() {
-        if (position < 0) {
-            clearInterval(id)
-        } else {
-            position++
+    id = setInterval(movement, 1);
+    
+    function movement() {
+        if (position >= 0) {
+            clearInterval(id); 
+    }   else {
+            position+=8;
             mobileNavMenu.style.top = position + 'px';
-        }
     }
 }
+}
+
+
+
+
 
 btn.addEventListener('click', mobileNavColorChange); 
-btn.addEventListener('click', mobileNavDropdown)
-
-
+btn.addEventListener('click', mobileNavDropdown);
 
 
 
