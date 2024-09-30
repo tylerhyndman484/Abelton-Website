@@ -72,16 +72,47 @@
       position: relative;
     }
 
-    .mobileNavLogo {
+    .normalMobileNavLogo {
       position: relative;
       filter: none;
+      z-index: 4;
     }
+
+    .startingMobileNavLogo {
+      position: relative;
+      filter: none;
+      z-index: 4;
+      animation: colorWhite .3s linear forwards;
+    }
+
+    @keyframes colorWhite {
+      0% {
+        filter: none;
+      }
+
+      100% {
+        filter: invert();
+      }
+    }
+
 
     .jsMobileNavLogo {
       position: relative;
       filter: invert();
       z-index: 3;
+      animation: colorBlack .3s linear forwards;
     }
+
+    @keyframes colorBlack {
+      0% {
+        filter: invert()
+      }
+
+      100% {
+        filter: none;
+      }
+    }
+
 
     .menuButton {
       border: transparent;
@@ -90,8 +121,20 @@
       font-weight: 400;
       color: black;
       position: relative;
-      background-color: white;
-      z-index: 2;
+      background-color: transparent;
+      z-index: 4;
+      animation: menuButtonColorChange .2s linear;
+    }
+
+    @keyframes menuButtonColorChange {
+      0%  {
+        color: white;
+      }
+
+      100% {
+        color: black;
+      }
+
     }
 
     .jsMenuButton {
@@ -99,23 +142,35 @@
       margin-left: 1.2rem;
       font-size: 1.1rem;
       font-weight: 400;
-      color: white;
+      color: black;
       position: relative;
-      background-color: white;
-      z-index: 2;
+      background-color: transparent;
+      z-index: 4;
+      animation: jsMenuButtonColorChange .2s linear forwards;
     }
 
-    #downArrow {
-      width: .55rem;
-      transform: translate(50%);
+    @keyframes jsMenuButtonColorChange {
+      0% {
+        color: black;
+      }
+
+      100% {
+        color: white;
+      }
     }
 
     .downArrow {
       filter: none;
+      z-index: 4;
+      width: .55rem;
+      transform: translate(50%);
     }
 
     .jsDownArrow {
+      width: .55rem;
+      transform: translate(50%) rotate(180deg);
       filter: invert();
+      z-index: 4;
     }
 
     .menuLink {
@@ -136,15 +191,53 @@
       top: -1000px;
     }
 
+    
     .jsMobileMenuList {
-      
+      position: absolute;
+      background-color: var(--color-accent-700);
+      color: white;
+      width: 100%;
+      padding-left: .75rem;
+      padding-top: 4rem;
+      left: 0;
+      top: -1000px;
+      animation: mobileNavBarDescend .5s ease-out forwards;
     }
 
-    @keyframes  {
-      
+    @keyframes mobileNavBarDescend {
+      0% {
+        top: -1000px;
+      }
+
+      100% {
+        top: 0px;
+      }
+    }
+    
+    .startingJsMobileMenuList {
+      position: absolute;
+      background-color: var(--color-accent-700);
+      color: white;
+      width: 100%;
+      padding-left: .75rem;
+      padding-top: 4rem;
+      left: 0;
+      top: -1000px;
+      animation: mobileNavBarAscend .5s ease-out;
+    }
+    
+    @keyframes mobileNavBarAscend {
+      0% {
+        top: 0px;
+      }
+
+      100% {
+        top: -1000px;
+      }
     }
 
-    .mobileMenuList ul {
+
+    #mobileMenuList ul {
       list-style: none;
       padding-left: 0;
       font-weight: 500;

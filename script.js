@@ -10,38 +10,47 @@ let mobileMenuList = document.getElementById("mobileMenuList");
 function mobileNavColorChange() {
     if (btn.className === 'menuButton') {
         btn.className = 'jsMenuButton';
-        mobileLogo.className = 'jsMobileNavLogo';
+        mobileLogo.className = 'startingMobileNavLogo';
         mobileArrow.className = 'jsDownArrow';
     } else {
         btn.className = 'menuButton';
-        mobileLogo.className = 'mobileNavLogo';
+        mobileLogo.className = 'jsMobileNavLogo';
         mobileArrow.className = 'downArrow';
     }    
 }
 
-
-function mobileNavDropdown() {
-    const mobileNavMenu = document.getElementById("mobileMenuList");
-    let position = -1000;
-
-    id = setInterval(movement, 1);
-    
-    function movement() {
-        if (position >= 0) {
-            clearInterval(id); 
-    }   else {
-            position+=8;
-            mobileNavMenu.style.top = position + 'px';
+function mobileNavMovement() {
+    if (btn.className === 'menuButton') {
+        mobileMenuList.className = 'startingJsMobileMenuList';
+    } else {
+        mobileMenuList.className = 'jsMobileMenuList';
     }
 }
-}
+
+
+// function mobileNavDropdown() {
+//     const mobileNavMenu = document.getElementById("mobileMenuList");
+//     let position = -1000;
+
+//     id = setInterval(movement, 1);
+//     move = setInterval(upMovement, 1);
+    
+//     function movement() {
+//         if (position >= 0) {
+//             clearInterval(id); 
+//     }   else {
+//             position+=8;
+//             mobileNavMenu.style.top = position + 'px';
+//     }
+// }
+// }
 
 
 
 
 
 btn.addEventListener('click', mobileNavColorChange); 
-btn.addEventListener('click', mobileNavDropdown);
+btn.addEventListener('click', mobileNavMovement);
 
 
 
