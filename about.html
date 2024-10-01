@@ -11,12 +11,77 @@
     <title>Learn more about Ableton - maker of Live and Push | Ableton</title>
 </head>
 <body>
-    <div class="bodyContainer">
-        <header>
-            <nav class="borderBottom">
-                <div class="mainNav">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC" alt="company logo which is a 3 bar menu icon"/>
-                    <ul class="mainNavLinks noListStyle boldText flex">
+    <header>
+        <nav class="borderBottom">
+            <div class="mainNav">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC" alt="company logo which is a 3 bar menu icon"/>
+                <ul class="mainNavLinks noListStyle boldText flex">
+                    <li>Live</li>
+                    <li>Push</li>
+                    <li>Note</li>
+                    <li>Link</li>
+                    <li>Shop</li>
+                    <li>Packs</li>
+                    <li>Help</li>
+                    <li class="orangeText more">More</li>
+                </ul>
+            </div>
+    
+            <div class="mainNavTopRight">
+                <ul class="noListStyle boldText mainNavTopRightLinks">
+                    <li class="tryLive blueText">Try Live 12 for free</li>
+                    <li>Log in or register</li>
+                </ul>
+            </div>
+
+            <div class="moreDropdown">
+                <div class="moreDropdownRowOne">
+                    <h2>More on Ableton.com</h2>
+                    <ul>
+                        <li>Blog</li>
+                        <li>Ableton for the Classrom</li>
+                        <li>Ableton for Colleges and Universites</li>
+                        <li>Certified Training</li>
+                        <li>About Ableton</li>
+                        <li>Jobs</li>
+                        <li>Apprenticeships</li>
+                    </ul>
+                </div>
+
+                <div class="moreDropdownRowTwo">
+                    <h2>
+                        More from Ableton:
+                    </h2>
+                    <div class="moreDropdownSectionList">
+                        <div>
+                            <h3>Loop</h3>
+                            <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                        </div>
+                        <div>
+                            <h3>Learning Music</h3>
+                            <p>Learn the fundamentals of music making right in your browser</p>
+                        </div>
+                        <div>
+                            <h3>Learning Synths</h3>
+                            <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                        </div>
+                        <div>
+                            <h3>Making Music</h3>
+                            <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
+                        </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <nav class="mobileNav">
+            <div class="mobileLogoAndMenuBar">
+                <img id="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC" class="normalMobileNavLogo">
+                <button type="button" class="menuButton" id="menuButton">Menu</button>
+                <img src="svg/bxs-down-arrow.svg" alt="" id="downArrow" class="downArrow">
+            </div>
+            <div class="mobileMenuList" id="mobileMenuList">
+                    <ul class="mobileListSection1">
                         <li>Live</li>
                         <li>Push</li>
                         <li>Note</li>
@@ -24,74 +89,49 @@
                         <li>Shop</li>
                         <li>Packs</li>
                         <li>Help</li>
-                        <li class="orangeText more">More</li>
-                    </ul>
-                </div>
-        
-                <div class="mainNavTopRight">
-                    <ul class="noListStyle boldText mainNavTopRightLinks">
-                        <li class="tryLive blueText">Try Live 12 for free</li>
+                        <li>Try Live 12 for free</li>
                         <li>Log in or register</li>
                     </ul>
-                </div>
-            </nav>
-            <nav class="mobileNav">
-                <div class="mobileLogoAndMenuBar">
-                    <img id="logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAK1JREFUaEPtlkEKwCAQxPT/j64/kIEwLNL07Ky7iWL3evzbj/e/HGDaoAY0AAl4hCBAHNcARggL/MLAByHR+BVyYsABoAINQIDdeHIHuh3A6g4AAeK4BjBCWCAx4EPWhKwBSDeJ41+JZJOxNckRGmsu2dgBEkrNNRpo0k1qJwZ8iROSlzX4HdDAtAG4fzeeXOJuB7C6A0CAOK4BjBAW0AAEiOMawAhhAQ1AgDh+AJfZDDGRtEaJAAAAAElFTkSuQmCC" class="normalMobileNavLogo">
-                    <button type="button" class="menuButton" id="menuButton">Menu</button>
-                    <img src="svg/bxs-down-arrow.svg" alt="" id="downArrow" class="downArrow">
-                </div>
-                <div class="mobileMenuList" id="mobileMenuList">
-                        <ul class="mobileListSection1">
-                            <li>Live</li>
-                            <li>Push</li>
-                            <li>Note</li>
-                            <li>Link</li>
-                            <li>Shop</li>
-                            <li>Packs</li>
-                            <li>Help</li>
-                            <li>Try Live 12 for free</li>
-                            <li>Log in or register</li>
-                        </ul>
-                        <ul class="mobileListSection2">
-                            <li>More on Ableton.com:</li>
-                            <li>Blog</li>
-                            <li>Ableton for the Classrom</li>
-                            <li>Ableton for Colleges and Universites</li>
-                            <li>Certified Training</li>
-                            <li>About Ableton</li>
-                            <li>Jobs</li>
-                            <li>Apprenticeships</li>
-                        </ul>
-                        <div class="scrollOffScreenSection">
-                            <h2 class="scrollOffScreenListTitle">
-                                More from Ableton:
-                            </h2>
-                            <div class="scrollOffScreenList">
-                                <div class="Loop">
-                                    <h3>Loop</h3>
-                                    <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
-                                </div>
-                                <div class="learningMusic">
-                                    <h3>Learning Music</h3>
-                                    <p>Learn the fundamentals of music making right in your browser</p>
-                                </div>
-                                <div class="learningSynths">
-                                    <h3>Learning Synths</h3>
-                                    <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
-                                </div>
-                                <div class="makingMusic">
-                                    <h3>Making Music</h3>
-                                    <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
-                                </div>
+                    <ul class="mobileListSection2">
+                        <li>More on Ableton.com:</li>
+                        <li>Blog</li>
+                        <li>Ableton for the Classrom</li>
+                        <li>Ableton for Colleges and Universites</li>
+                        <li>Certified Training</li>
+                        <li>About Ableton</li>
+                        <li>Jobs</li>
+                        <li>Apprenticeships</li>
+                    </ul>
+                    <div class="scrollOffScreenSection">
+                        <h2 class="scrollOffScreenListTitle">
+                            More from Ableton:
+                        </h2>
+                        <div class="scrollOffScreenList">
+                            <div class="Loop">
+                                <h3>Loop</h3>
+                                <p>Watch Talks, Performances and Features from Ableton's Summit for Music Makers</p>
+                            </div>
+                            <div class="learningMusic">
+                                <h3>Learning Music</h3>
+                                <p>Learn the fundamentals of music making right in your browser</p>
+                            </div>
+                            <div class="learningSynths">
+                                <h3>Learning Synths</h3>
+                                <p>Get started with synthesis using a web-based synth and accompanying lessons.</p>
+                            </div>
+                            <div class="makingMusic">
+                                <h3>Making Music</h3>
+                                <p>Some tips from 74 Creative Strategies for Electronic Producers.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </header>
-        
-        <main>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="bodyContainer">
             <nav class="secondaryNav">
                 <ul class="boldText noListStyle flex gap secondaryNavList">
                     <li class="orangeText">About</li>
@@ -212,8 +252,9 @@
                     </div>
                 </div>
             </section>
-        </main>
-        <footer>
+    </main>
+    <footer>
+        <div class="bodyContainer">
             <div class="gridTitle">
                 <h2 class="biggerText boldText ableton">Ableton</h2>
             </div>
@@ -221,13 +262,13 @@
                 <div class="register">
                     <p>Register Live of Push</p>
                     <p>About Ableton</p>
-                    <p>Jobs</p> 
+                    <p>Jobs</p>
                     <div class="socialIcons">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M12.001 2.002c-5.522 0-9.999 4.477-9.999 9.999 0 4.99 3.656 9.126 8.437 9.879v-6.988h-2.54v-2.891h2.54V9.798c0-2.508 1.493-3.891 3.776-3.891 1.094 0 2.24.195 2.24.195v2.459h-1.264c-1.24 0-1.628.772-1.628 1.563v1.875h2.771l-.443 2.891h-2.328v6.988C18.344 21.129 22 16.992 22 12.001c0-5.522-4.477-9.999-9.999-9.999z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M21.593 7.203a2.506 2.506 0 0 0-1.762-1.766C18.265 5.007 12 5 12 5s-6.264-.007-7.831.404a2.56 2.56 0 0 0-1.766 1.778c-.413 1.566-.417 4.814-.417 4.814s-.004 3.264.406 4.814c.23.857.905 1.534 1.763 1.765 1.582.43 7.83.437 7.83.437s6.265.007 7.831-.403a2.515 2.515 0 0 0 1.767-1.763c.414-1.565.417-4.812.417-4.812s.02-3.265-.407-4.831zM9.996 15.005l.005-6 5.207 3.005-5.212 2.995z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path><circle cx="16.806" cy="7.207" r="1.078"></circle><path d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"></path></svg>
                     </div>
                 </div>
                 <div class="community">
@@ -263,7 +304,7 @@
                     <p>Enter your email address to stay up to date with the latest offers, tutorials, downloads, surveys and more.</p>
                     <div class="email">
                         <input type="email" name="email" placeholder="Email Address">
-                        <button><strong>Sign up</strong></button>
+                        <button type="button"><strong>Sign up</strong></button>
                     </div>
                 </div>
             </div>
@@ -280,12 +321,10 @@
                 </div>
                 <div class="footerLogo">
                     <p class="boldText smallFont">Made In Berlin</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
                 </div>
             </div>
-        </footer>
-    </div>
-
-
+        </div>
+    </footer>
 </body>
 </html>

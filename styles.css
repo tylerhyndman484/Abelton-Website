@@ -48,6 +48,11 @@
 
   /* Visual Styling */
 
+    html {
+      display: grid;
+      place-items: center;
+    }
+
     body {
       font-family: 'Roboto';
       max-width: 100rem;
@@ -58,6 +63,10 @@
       body {
         margin-inline: 3rem;
       }
+    }
+
+    header {
+      background-color: white;
     }
 
     /* Mobile Navigation Menu that drops down when clicked */
@@ -201,7 +210,7 @@
       padding-top: 4rem;
       left: 0;
       top: -1000px;
-      animation: mobileNavBarDescend .5s ease-out forwards;
+      animation: mobileNavBarDescend .3s linear forwards;
     }
 
     @keyframes mobileNavBarDescend {
@@ -223,7 +232,7 @@
       padding-top: 4rem;
       left: 0;
       top: -1000px;
-      animation: mobileNavBarAscend .5s ease-out;
+      animation: mobileNavBarAscend .3s linear;
     }
     
     @keyframes mobileNavBarAscend {
@@ -808,7 +817,7 @@
     .jobLinkBox {
       display: flex;
       padding-inline: 8.33vw;
-      margin-bottom: 8.33vw;
+      padding-bottom: 8.33vw;
       width: fit-content;
       height: 42vw;
     }
