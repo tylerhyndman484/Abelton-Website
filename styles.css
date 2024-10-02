@@ -626,6 +626,7 @@
       align-items: center;
       justify-content: end;
       width: 50%;
+      padding-right: 2.5rem;
     }
 
     .mainNavTopRightLinks li {
@@ -1108,7 +1109,7 @@
 
     /* footer layout changes to stacked on top of each other */
 
-    @media screen and (max-width: 64rem) {
+    @media screen and (max-width: 63.99rem) {
       .gridFooterLayout {
         grid-template-columns: 1fr;
         grid-template-areas: 
