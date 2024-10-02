@@ -350,8 +350,21 @@
       font-size: 1.1rem;
     }
 
+    .more {
+      color: var(--color-accent-600);
+    }
+
     .more::after {
       content: "+";
+      padding-left: 5px;
+    }
+
+    .moreIconChange {
+      color: var(--color-accent-600);
+    }
+
+    .moreIconChange::after {
+      content: "-";
       padding-left: 5px;
     }
 
@@ -418,7 +431,7 @@
       z-index: 100;
     }
 
-    @media screen and (max-width: 48rem) {
+    @media screen and (max-width: 63.99rem) {
       .secondaryNav {
         position: static;
       }
@@ -537,7 +550,7 @@
       height: max(4vw ,3.6rem);
     }
 
-    @media screen and (max-width: 64rem) {
+    @media screen and (max-width: 63.99rem) {
       .borderBottom {
         position: absolute;
         left: -1000px;
@@ -548,7 +561,7 @@
       }
     }
 
-    @media screen and (min-width: 64.01rem) {
+    @media screen and (min-width: 63.99rem) {
       .mobileNav {
         position: absolute;
         left: -1000px;

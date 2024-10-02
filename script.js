@@ -40,13 +40,24 @@ const moreDropdown = () => {
     }
 }
 
+const moreIconChange = () => {
+    if (moreButton.className === "more") {
+        moreButton.className = "moreIconChange";
+    } else {
+        moreButton.className = "more";
+    }
+
+}
+
+
+
 
 
 
 btn.addEventListener('click', mobileNavColorChange); 
 btn.addEventListener('click', mobileNavMovement);
 moreButton.addEventListener('click', moreDropdown);
-
+moreButton.addEventListener('click', moreIconChange);
 
 
 
