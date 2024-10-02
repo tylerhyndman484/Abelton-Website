@@ -682,6 +682,7 @@
       background-position-y: 50%;
       margin-inline: 8%;
       height: 90vh;
+      
       display: grid;
     }
 
@@ -1019,7 +1020,7 @@
 
     .languageAndLocation {
       grid-area: languageAndLocation;
-      text-wrap: nowrap;
+      word-wrap: nowrap;
     }
 
     .newsletter {
