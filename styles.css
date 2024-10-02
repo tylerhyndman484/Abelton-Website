@@ -356,19 +356,58 @@
     }
 
     .moreDropdown {
+      display: none;
+      position: relative;
+      padding: 2rem 3rem 3rem 3rem;
+    }
+
+    .moreDropdownVisible {
       display: block;
       position: relative;
+      padding: 2rem 3rem 3rem 3rem;
+    }
+
+    .moreDropdown h2 {
+      font-weight: 500;
+      padding-bottom: 1rem;
+    }
+
+    .moreDropdownVisible h2 {
+      font-weight: 500;
+      padding-bottom: 1rem;
+    }
+
+    .moreDropdownRowOne {
+      padding-bottom: 3rem;
     }
 
     .moreDropdownRowOne ul {
       display: flex;
       gap: 2rem;
       list-style: none;
+      padding-left: 0;
+      font-size: 1.1rem;
     }
 
     .moreDropdownSectionList {
       display: flex;
+      line-height: 1.8rem; 
+      gap: 1.6rem;
     }
+
+    .moreDropdownSectionList div {
+      width: 25%;
+    }
+
+    .moreDropdownSectionList h3 {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    .moreDropdownSectionList p {
+      font-size: 1.1rem;
+    }
+
 
     .secondaryNav {
       font-weight: 500;
@@ -509,7 +548,7 @@
       }
     }
 
-    @media screen and (min-width: 64rem) {
+    @media screen and (min-width: 64.01rem) {
       .mobileNav {
         position: absolute;
         left: -1000px;

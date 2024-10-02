@@ -6,6 +6,7 @@ let btn = document.getElementById("menuButton");
 let mobileLogo = document.getElementById("logo");
 let mobileArrow = document.getElementById("downArrow");
 let mobileMenuList = document.getElementById("mobileMenuList");
+let moreButton = document.getElementById("more");
 
 function mobileNavColorChange() {
     if (btn.className === 'menuButton') {
@@ -27,30 +28,26 @@ function mobileNavMovement() {
     }
 }
 
+const moreDropdown = () => {
+    const moreSection = document.getElementById("moreDropdown");
 
-// function mobileNavDropdown() {
-//     const mobileNavMenu = document.getElementById("mobileMenuList");
-//     let position = -1000;
-
-//     id = setInterval(movement, 1);
-//     move = setInterval(upMovement, 1);
-    
-//     function movement() {
-//         if (position >= 0) {
-//             clearInterval(id); 
-//     }   else {
-//             position+=8;
-//             mobileNavMenu.style.top = position + 'px';
-//     }
-// }
-// }
-
+    if(moreSection.className === "moreDropdownVisible") {
+        moreSection.className =  "moreDropdown";
+        moreSection.setAttribute("aria-hidden", "true");
+    } else {
+        moreSection.className = "moreDropdownVisible";
+        moreSection.setAttribute("aria-hidden", "false");
+    }
+}
 
 
 
 
 btn.addEventListener('click', mobileNavColorChange); 
 btn.addEventListener('click', mobileNavMovement);
+moreButton.addEventListener('click', moreDropdown);
+
+
 
 
 
