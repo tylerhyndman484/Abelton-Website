@@ -7,6 +7,49 @@
 --color-accent-500: #d5b3ff;
 --color-accent-700: #0000ff;
 --companyNameColor: #fb6854;
+
+--ff-medium: "Avenir-Medium";
+--ff-light: "Avenir-Book";
+--ff-bold: "Avenir-Heavy";
+--ff-bolder: "Avenir-Black";
+--ff-lighter: "Avenir-Light";
+--ff-light-middle: "Avenir-Roman";
+
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url(avenir-font/AvenirLTStd-BlackOblique.otf) format("opentype"), url(avenir-font/AvenirLTStd-Book.otf) format("opentype"), url(avenir-font/AvenirLTStd-BookOblique.otf) format("opentype"), url(avenir-font/AvenirLTStd-HeavyOblique.otf) format("opentype"), url(avenir-font/AvenirLTStd-LightOblique.otf) format("opentype"), url(avenir-font/AvenirLTStd-MediumOblique.otf) format("opentype"), url(avenir-font/AvenirLTStd-Oblique.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url(avenir-font/AvenirLTStd-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir-Book";
+  src: url(avenir-font/AvenirLTStd-Book.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url(avenir-font/AvenirLTStd-Heavy.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url(avenir-font/AvenirLTStd-Black.otf)  format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir-Light";
+  src: url(avenir-font/AvenirLTStd-Light.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url(avenir-font/AvenirLTStd-Roman.otf) format("opentype");
 }
 
 /* CSS RESET */
@@ -54,7 +97,6 @@
     }
 
     body {
-      font-family: 'Roboto';
       max-width: 100rem;
       background-color: rgb(240, 240, 240);
     }
@@ -339,7 +381,7 @@
     }
 
     .mainNav {
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     .noListStyle {
@@ -544,12 +586,6 @@
   /* Visual Styling */
 
   /* positional styling */
-
-    nav img {
-      width: max(4vw ,3.6rem);
-      height: max(4vw ,3.6rem);
-    }
-
     @media screen and (max-width: 63.99rem) {
       .borderBottom {
         position: absolute;
@@ -575,6 +611,11 @@
     nav {
       display: flex;
     }
+
+    .navLogo {
+      width: 4rem;
+      height: 3rem;
+    }
     
     .flex {
       display: flex;
@@ -583,7 +624,7 @@
     .mainNav {
       display: flex;
       padding-left: 2rem;
-      align-items: center;
+      width: 100%;
     }
 
     @media screen and (max-width: 80rem) {
@@ -594,15 +635,29 @@
 
      .mainNavLinks {
       display: flex;
-      gap: 2rem;
+      gap: 1.8rem;
       align-items: center;
-      padding-top: 1.25rem;
-      padding-bottom: 1rem;
+      font-weight: lighter;
+      padding-left: 3rem;
+      font-size: 1.1rem;
+    }
+
+    @media screen and (min-width: 100rem) {
+      .mainNavLinks {
+        gap: 2.75rem;
+      }
     }
 
     @media screen and (max-width: 80rem) {
       .mainNavLinks {
         font-size: .875rem;
+      }
+    }
+
+    @media screen and (max-width: 64rem) {
+      .mainNavLinks {
+        padding-left: 1rem;
+        gap: 1rem;
       }
     }
 
@@ -622,16 +677,23 @@
 
     .mainNavTopRightLinks {
       display: flex;
-      gap: 2rem;
       align-items: center;
       justify-content: end;
       width: 50%;
       padding-right: 2.5rem;
     }
 
+    .mainNavTopRightLinks ul {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      font-size: .875rem;
+      word-spacing: -.1rem;
+    }
+
     .mainNavTopRightLinks li {
       list-style: none;
-      font-weight: 500;
+      font-weight: 400;
     }
 
     @media screen and (max-width: 80rem) {
@@ -651,8 +713,11 @@
 
     .borderBottom {
       border-bottom: 2px solid rgb(240, 240, 240);
-      padding-bottom: .35rem;
+      padding-bottom: .5rem;
+      padding-top: .75rem;
       display: block;
+      width: 100%;
+      font-family: var(--ff-bold);
     }
 
     .secondaryNav {
@@ -681,8 +746,7 @@
       background-position-x: 50%;
       background-position-y: 50%;
       margin-inline: 8%;
-      height: 90vh;
-      
+      height: 100dvh;
       display: grid;
     }
 
