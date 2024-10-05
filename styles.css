@@ -394,6 +394,10 @@
       grid-auto-columns: 53%;
       overflow-x: scroll;
     }
+
+    .scrollOffScreenList p {
+      font-family: var(--ff-light-middle);
+    }
     
 
 
@@ -488,7 +492,7 @@
 
 
     .secondaryNav {
-      font-weight: 500;
+      font-family: var(--ff-bold);
       list-style: none;
       position: sticky;
       top: 0px;
@@ -674,13 +678,9 @@
     @media screen and (max-width: 80rem) {
       .mainNavLinks {
         font-size: .875rem;
-      }
-    }
-
-    @media screen and (max-width: 64rem) {
-      .mainNavLinks {
         padding-left: 1rem;
         gap: 1.2rem;
+        width: 100%;
       }
     }
 
@@ -695,6 +695,7 @@
     @media screen and (max-width: 80rem) {
       .mainNavTopRight {
         padding-right: 1.5rem;
+        width: 50%;
       }
     }
 
@@ -706,6 +707,13 @@
       padding-right: 2.5rem;
     }
 
+    @media screen and (max-width: 80rem) {
+      .mainNavTopRightLinks {
+        padding-right: 1rem;
+      }
+    }
+
+
     .mainNavTopRightLinks ul {
       display: flex;
       gap: 2rem;
@@ -714,7 +722,7 @@
       word-spacing: -.1rem;
     }
 
-    @media screen and (max-width: 64rem) {
+    @media screen and (max-width: 80rem) {
       .mainNavTopRightLinks ul {
         gap: 1rem;
       }
@@ -727,7 +735,7 @@
 
     @media screen and (max-width: 80rem) {
       .mainNavTopRightLinks li {
-        font-size: .875rem;
+        font-size: .75rem;
       }
     }
 
@@ -770,6 +778,19 @@
     @media screen and (max-width: 80rem) {
       .secondaryNav {
         padding-left: 1.1rem;
+        padding-bottom: 1.3rem;
+        padding-top: 1.3rem;
+      }
+    }
+
+    .secondaryNavList {
+      gap: 1.75rem;
+      font-size: .875rem;
+    }
+
+    @media screen and (min-width: 100rem) {
+      .secondaryNavList {
+        gap: 2.2rem;
       }
     }
 
