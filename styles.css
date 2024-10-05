@@ -553,10 +553,12 @@
 
     .paddingTextBlock h2 {
       line-height: 2.5rem;
+      font-family: var(--ff-bold);
     }
 
     .paddingTextBlock p {
       line-height: 2rem;
+      font-family: var(--ff-light-middle);
     }
 
     @media screen and (max-width: 70.1875rem) {
