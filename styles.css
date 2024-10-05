@@ -245,6 +245,7 @@
     .mobileMenuList {
       position: absolute;
       background-color: var(--color-accent-700);
+      font-family: var(--ff-bold);
       color: white;
       width: 100%;
       padding-left: .75rem;
@@ -257,6 +258,7 @@
     .jsMobileMenuList {
       position: absolute;
       background-color: var(--color-accent-700);
+      font-family: var(--ff-bold);
       color: white;
       width: 100%;
       padding-left: .75rem;
