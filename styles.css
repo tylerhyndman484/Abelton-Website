@@ -808,7 +808,7 @@
       background-position-x: 50%;
       background-position-y: 50%;
       margin-inline: 8%;
-      height: 100dvh;
+      height: calc(100dvh - 120px);
       display: grid;
     }
 
@@ -818,7 +818,18 @@
       place-self: center;
     }
 
-    @media screen and (max-width: 48rem) {
+    .heroTitle {
+      font-family: var(--ff-medium);
+      padding-top: 2rem;
+    }
+
+    @media screen and (min-width: 64rem) {
+      .heroTitle {
+        font-size: 8rem;
+      }
+    }
+
+    @media screen and (max-width: 26.6rem) {
       .heroTitle {
         font-size: 3.5rem;
       }
