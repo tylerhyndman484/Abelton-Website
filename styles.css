@@ -546,11 +546,7 @@
     .mainNavTopRight {
       font-size: .875rem;
     }
-
-    .abletonCompanyBackground {
-      font-size: 1.1rem;
-    }
-
+    
     .paddingTextBlock h2 {
       line-height: 2.5rem;
       font-family: var(--ff-bold);
