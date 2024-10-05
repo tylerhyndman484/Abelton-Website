@@ -362,6 +362,16 @@
       height: 8rem;
     }
 
+    .jsMobileMenuList::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      background-image: linear-gradient(90deg, rgb(0, 0, 255, 0), blue);
+      width: 2.5rem;
+      height: 8rem;
+    }
+
     .scrollOffScreenSection div {
       font-size: .75rem;
       line-height: 1.25rem;
