@@ -942,6 +942,13 @@
       padding-top: 8.33vw;
     }
 
+    @media screen and (min-width: 100rem) {
+      .videoTestimony {
+        padding-bottom: 8.33rem;
+        padding-top: 8.33rem;
+      }
+    }
+
     .videoCaption {
       padding-top: .75rem;
       padding-left: .75rem;
