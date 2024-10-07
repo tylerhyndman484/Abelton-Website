@@ -546,22 +546,26 @@
     }
 
     .paddingTextBlock h2 {
-      line-height: 2.5rem;
+      line-height: 2.8rem;
+      font-size: 1.875rem;
       font-family: var(--ff-bold);
     }
 
     .paddingTextBlock p {
-      line-height: 2rem;
+      line-height: 2.2rem;
+      font-size: 1.25rem;
       font-family: var(--ff-light-middle);
     }
 
     @media screen and (max-width: 70.1875rem) {
       .paddingTextBlock h2 {
         line-height: 2rem;
+        font-size: 1.25rem;
       }
       
       .paddingTextBlock p {
         line-height: 1.5rem;
+        font-size: 1rem;
       }
     }
 
@@ -836,7 +840,7 @@
       padding-top: 8.33vw;
       padding-bottom: 8.33vw;
       padding-inline: 8.33vw;
-      max-width: 61rem;
+      max-width: 70rem;
       min-width: 15rem;
     }
 
