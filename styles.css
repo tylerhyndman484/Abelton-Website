@@ -1244,6 +1244,10 @@
       padding-top: 6.5rem;
     }
 
+    .ableton {
+      font-family: var(--ff-bold);
+    }
+
     .gridFooterLayout {
       padding-inline: 7rem;
       padding-top: 3.5rem;
@@ -1347,10 +1351,16 @@
 
     .languageAndLocation label {
       padding-bottom: 1rem;
+      font-family: var(--ff-bold);
+    }
+
+    .gridFooterLayout h3 {
+      font-family: var(--ff-bold);
     }
 
     .gridFooterLayout p {
       position: relative;
+      font-family: var(--ff-medium);
     }
 
     .gridFooterLayout p::after {
