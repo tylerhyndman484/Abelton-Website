@@ -1044,6 +1044,13 @@
       height: 47vw;
     }
 
+    @media screen and (min-width: 100rem) {
+      .bigImgSection img {
+        width: 83rem;
+        height: 47rem;
+      }
+    }
+
     .bigImgSection {
       display: flex;
       justify-content: center;
@@ -1095,6 +1102,27 @@
       width: 41.67vw;
       height: 41.67vw;
       z-index: 3;
+    }
+
+    @media screen and (min-width: 100rem) {
+      .imgSection3 {
+        height: 58rem;
+      }
+
+      .purpleBackground {
+        width: 67rem;
+        height: 58rem;
+      }
+  
+      .imgSec3-LeftContainer img {
+        width: 33.3rem;
+        height: 25rem;
+      }
+  
+      .imgSect3-RightContainer img {
+        width: 41.67rem;
+        height: 41.67rem;
+      }
     }
 
     .jobLinkBox {
