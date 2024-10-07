@@ -1179,6 +1179,7 @@
       padding-bottom: 2rem;
       padding-top: 8.33vw;
       line-height: 2.5rem;
+      font-family: var(--ff-bold);
     }
 
     @media screen and (max-width: 70rem) {
@@ -1193,6 +1194,7 @@
 
     .rightBoxWithJobLink p {
       padding-bottom: 8.33vw;
+      font-family: var(--ff-bold);
     }
 
     @media screen and (min-width: 70rem) {
