@@ -840,13 +840,13 @@
       padding-top: 8.33vw;
       padding-bottom: 8.33vw;
       padding-inline: 8.33vw;
-      max-width: 70rem;
+      max-width: 69rem;
       min-width: 15rem;
     }
 
     @media screen and (min-width: 48rem) {
       .paddingTextBlock {
-        padding-inline: 8rem;
+        padding-inline: 11rem;
       }
     }
 
@@ -1009,6 +1009,35 @@
       height: 41.67vw;
       z-index: 3;
     } 
+
+    @media screen and (min-width: 100rem) {
+      .greenBackground {
+        width: 58.3rem;
+        height: 75rem;
+      }
+
+      .imgSec2-LeftContainer {
+        width: 58.3rem;
+        height: 75rem;
+        gap: 8.33rem;
+        padding-top: 8.33rem;
+      }      
+
+      .imgSec2-LeftContainer img {
+        width: 33.3rem;
+        height: 25rem;
+      }
+
+      .imgSec2-RightContainer {
+        margin-right: 8.33rem;
+      }
+
+      .imgSec2-RightContainer img {
+        width: 41.67rem;
+        height: 41.67rem;
+      } 
+
+    }
 
     .bigImgSection img {
       width: 83vw;
