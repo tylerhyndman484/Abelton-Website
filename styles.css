@@ -449,7 +449,7 @@
     }
 
     .moreDropdownVisible h2 {
-      font-weight: 500;
+      font-family: var(--ff-bold);
       padding-bottom: 1rem;
     }
 
@@ -463,6 +463,7 @@
       list-style: none;
       padding-left: 0;
       font-size: 1.1rem;
+      font-family: var(--ff-light-middle);
     }
 
     .moreDropdownSectionList {
@@ -482,6 +483,7 @@
 
     .moreDropdownSectionList p {
       font-size: 1.1rem;
+      font-family: var(--ff-light-middle);
     }
 
 
@@ -1246,7 +1248,7 @@
 
     .ableton {
       font-family: var(--ff-bold);
-      font-size: 2.5rem;
+      font-size: 3.5rem;
     }
 
     .gridFooterLayout {
@@ -1265,18 +1267,18 @@
 
     .register {
       grid-area: register;
-      line-height: 1.4rem;
+      line-height: 2rem;
       row-gap: 5rem;
     }
 
     .community {
       grid-area: community;
-      line-height: 1.4rem;
+      line-height: 2rem;
     }
 
     .education {
       grid-area: education;
-      line-height: 1.4rem;
+      line-height: 2rem;
     }
 
     .languageAndLocation {
@@ -1286,14 +1288,14 @@
 
     .newsletter {
       grid-area: newsletter;
-      line-height: 1.4rem;
+      line-height: 2rem;
     }
 
     .socialIcons {
       display: flex;
+      justify-content: start;
       padding-top: .5rem;
       gap: .25rem;
-      transform: scale(.8) translate(-40px, -8px);
     }
 
     .contactListAndLogo {
@@ -1313,7 +1315,6 @@
       display: flex;
       gap: .75rem;
       padding-left: 0;
-      font-size: .55rem;
       font-family: var(--ff-bold);
     }
 
@@ -1327,7 +1328,7 @@
 
     .footerLogo p {
       font-family: var(--ff-bold);
-      font-size: .55rem;
+      font-size: .8rem;
     }
 
     .newsletter p {
@@ -1349,12 +1350,10 @@
 
     .language {
       width: 30%;
-      font-size: .75rem;
     }
 
     .location {
       width: 55%;
-      font-size: .75rem;
     }
 
     .languageAndLocation {
@@ -1366,25 +1365,25 @@
     .languageAndLocation label {
       padding-bottom: .5rem;
       font-family: var(--ff-bold);
-      font-size: .8rem;
+      font-size: 1.1rem;
     }
 
     .gridFooterLayout h3 {
       font-family: var(--ff-bold);
-      font-size: .8rem;
+      font-size: 1.1rem;
     }
 
     .gridFooterLayout p {
       position: relative;
-      font-family: var(--ff-medium);
-      font-size: .8rem;
+      font-family: var(--ff-light-middle);
+      font-size: 1.1rem;
       width: max-content;
     }
 
     .gridFooterLayout p::after {
       content: url(/svg/bx-chevron-right.svg);
       position: absolute;
-      top: -2px;
+      top: 2px;
       right: -22px;
       font-weight: 100;
       transform: scale(.68);
@@ -1399,7 +1398,51 @@
       content: "";
     }
 
+    @media screen and (min-width: 100rem) {
+      .gridTitle {
+        padding-inline: 8.33rem;
+        padding-top: 6.5rem;
+      }
+  
+      .gridFooterLayout {
+        padding-inline: 8.33rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+      }
+  
+      .contactListAndLogo {
+        padding-inline: 8.33rem;
+        padding-bottom: 8.33rem;
+      }
+    }
+
     /* footer layout changes to stacked on top of each other */
+
+    @media screen and (max-width: 80rem) {
+      .gridFooterLayout {
+        font-size: .875rem;
+      }
+
+      .gridFooterLayout h3 {
+        font-size: .875rem;
+      }
+
+      .gridFooterLayout div {
+        line-height: 1.5rem;
+      }
+      
+      .gridFooterLayout p {
+        font-size: .875rem;
+      }
+
+      .newsletter h3 {
+        font-size: .875rem;
+      }
+
+      .newsletter p {
+        font-size: .875rem;
+      }
+    }
 
     @media screen and (max-width: 63.99rem) {
       .gridFooterLayout {
@@ -1413,7 +1456,7 @@
         
         column-gap: 0rem;
         row-gap: 2rem;
-        padding: 2rem 8.33vw 8.33vw 8.33vw;
+        padding: 2rem 8.33vw 2rem 8.33vw;
         font-size: .875rem;
       }
 
@@ -1424,6 +1467,10 @@
       .gridFooterLayout div {
         line-height: 1.5rem;
       }
+      
+      .gridFooterLayout p {
+        font-size: .875rem;
+      }
 
       .gridFooterLayout p::after {
         top: -1px;
@@ -1432,11 +1479,16 @@
 
       .gridTitle {
         padding-left: 8.33vw;
-        padding-top: 3.5vw;
+        padding-top: 8.33vw;
+      }
+
+      .newsletter h3 {
+        font-size: .875rem;
       }
 
       .newsletter p {
         padding-bottom: 1rem;
+        font-size: .875rem;
       }
 
       .ableton {
@@ -1449,14 +1501,15 @@
 
       .languageAndLocation label {
         padding-bottom: .5rem;
+        font-size: .875rem;
       }
 
-      .languageAndLocation select {
-        display: block;
-      }      
+      .language {
+        width: 20%;
+      }
 
       .location {
-        width: 65%;
+        width: 30%;
       }
 
       .contactListAndLogo {
@@ -1464,6 +1517,10 @@
         padding-bottom: 6vw;
         line-height: 1.75rem;
         display: block;
+      }
+
+      .contactList {
+        padding-bottom: 2vw;
       }
 
       .contactFooter {
@@ -1476,6 +1533,7 @@
         flex-direction: row-reverse;
         padding-top: 2.25rem;
         padding-left: .2rem;
+        margin-bottom: 1vw;
         width: 100%;
       }
 
