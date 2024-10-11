@@ -1434,6 +1434,11 @@
         font-size: .875rem;
       }
 
+      .languageAndLocation label {
+        padding-bottom: .5rem;
+        font-size: .875rem;
+      }
+
       .newsletter h3 {
         font-size: .875rem;
       }
@@ -1496,11 +1501,6 @@
 
       .register {
         height: fit-content;
-      }
-
-      .languageAndLocation label {
-        padding-bottom: .5rem;
-        font-size: .875rem;
       }
 
       .language {
