@@ -3,7 +3,7 @@
 ## Table of contents
 
 - [Overview](#overview)
-  - [The challenge](#the-challenge)
+  - [The project](#the-project)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -11,7 +11,6 @@
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -27,8 +26,8 @@
 
 ### Links
 
-- Solution URL: [GitHub](https://github.com/tylerhyndman484/four-card-feature-section.git)
-- Live Site URL: [Netlify](https://four-card-feature-project-fm.netlify.app/)
+- Solution URL: [GitHub](https://github.com/tylerhyndman484/Ableton-Website.git)
+- Live Site URL: [Netlify](https://ableton-website-project.netlify.app/)
 
 ## My process
 
@@ -38,55 +37,117 @@
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- CSS Transistions and Animations
+- Vanilla JavaScript
 - Mobile-first workflow
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-This project was a very helpful one to complete as i have struggled recently to do grid layouts that arent necessarily simple as just adding rows and columns. I got great exposure to using grid-template-areas and manipulating the layout to be exactly how i wanted it. Getting the two side card to split between the rows to be centered was a challenging one for me to figure out.
+This project taught me a lot and introduced me to things i haven't encountered before. I used JavaScript for the first time to code the dropdown menu of the mobile navigation menu, as well as the More button dropwdown on non-mobile devices. I used animations and transistions with changes of clasess upon click with javascript to achieve the funciontality they original website has.
 
 ```css
-@media screen and (min-width: 650px) {
-  .cardContainer {
-    margin: auto;
-    max-width: 900px;
-    gap: 1.5rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-      "Supervisor Team Calculator"
-      "Supervisor Karma Calculator";
-  }
-  
+.normalMobileNavLogo {
+      position: relative;
+      filter: none;
+      z-index: 4;
+      width: 5rem;
+      height: 3rem;
+    }
 
-  .cardOne {
-    grid-area: Supervisor;
-  }
+    .startingMobileNavLogo {
+      position: relative;
+      filter: none;
+      z-index: 4;
+      animation: colorWhite .3s linear forwards;
+      width: 5rem;
+      height: 3rem;
+    }
 
-  .cardTwo {
-    grid-area: Team;
-  }
+    @keyframes colorWhite {
+      0% {
+        filter: none;
+      }
 
-  .cardThree {
-    grid-area: Karma;
-  }
+      100% {
+        filter: invert();
+      }
+    }
 
-  .cardFour {
-    grid-area: Calculator;
-  }
-}
+
+    .jsMobileNavLogo {
+      position: relative;
+      filter: invert();
+      z-index: 3;
+      animation: colorBlack .3s linear forwards;
+      width: 5rem;
+      height: 3rem;
+    }
+
+    @keyframes colorBlack {
+      0% {
+        filter: invert()
+      }
+
+      100% {
+        filter: none;
+      }
+    }
+
+
+    .menuButton {
+      border: transparent;
+      margin-left: 1.2rem;
+      padding-top: .75rem;
+      font-size: 1.1rem;
+      font-family: var(--ff-bold);
+      color: black;
+      position: relative;
+      background-color: transparent;
+      z-index: 4;
+      animation: menuButtonColorChange .2s linear;
+    }
+
+    @keyframes menuButtonColorChange {
+      0%  {
+        color: white;
+      }
+
+      100% {
+        color: black;
+      }
+
+    }
+
+    .jsMenuButton {
+      border: transparent;
+      margin-left: 1.2rem;
+      font-size: 1.1rem;
+      padding-top: .75rem;
+      font-family: var(--ff-bold);
+      font-weight: 400;
+      color: black;
+      position: relative;
+      background-color: transparent;
+      z-index: 4;
+      animation: jsMenuButtonColorChange .2s linear forwards;
+    }
+
+    @keyframes jsMenuButtonColorChange {
+      0% {
+        color: black;
+      }
+
+      100% {
+        color: white;
+      }
+    }
 ```
 
 ### Continued development
 
-I am going to continue to develop myself on the use of grid and flexbox to be more comfortable manipulating the layout of a site.
+I am excited to keep expanding my knowledge of javascript to make more complex websites and web applications.
 
 ## Author
 
 - Website - [No website yet](https://www.your-site.com)
-- Frontend Mentor - [@tylerhyndman484](https://app.netlify.com/teams/tylerhyndman484)
-- Twitter - [@TylerHyndman](https://www.linkedin.com/in/tyler-hyndman-11327b140/)
-
-## Acknowledgments
-
-I wanted to shout out paulina-kottlewska on github. I could not figure out what i was doing wrong with the grid-template-areas because no matter what i did, my side cards would not center vertically. Her solution on this project really helped me grasp it, so i wanted to shout that out!
+- LinkedIn - [@TylerHyndman](https://www.linkedin.com/in/tyler-hyndman-11327b140/)
